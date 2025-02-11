@@ -1,4 +1,4 @@
-public class E1 {
+public class verifTipo {
     public static void main(String[] args) {
         Object obj1 = "Tipo String";
         Object obj2 = 1;

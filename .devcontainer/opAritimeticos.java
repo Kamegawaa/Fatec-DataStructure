@@ -1,4 +1,4 @@
-public class E2 {
+public class opAritimeticos {
     public static void main(String[] args) {
         // Soma
         int soma = 10 + 5;
