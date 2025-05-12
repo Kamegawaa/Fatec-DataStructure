@@ -6,6 +6,7 @@ public class suprimentos{
         int n = sc.nextInt();
         int suprimento[] = new int [n];
         int positivo = 0;
+        int negativo = 0;
         int saldo = 0;
         for(int i=0; i<n; i++){
             suprimento[i] = sc.nextInt();
@@ -13,13 +14,15 @@ public class suprimentos{
                 positivo += suprimento[i];
             } 
             if(suprimento[i]<0){
-                negativo += suprimento;
+                negativo += suprimento[i];
             }
         }
-        if(negativo>positivo){
+        if(negativo<positivo){
             negativo += positivo;
-            saldo += negativo;
-            saldo *= -1;
+            if(negativo<0){
+                saldo += negativo;
+                saldo *= -1;
+            }
         } 
         System.out.println(saldo);
     }
