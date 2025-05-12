@@ -23,11 +23,11 @@ if formula1 > formula2 and formula1 > formula3:
     melhortecido = qt_cam1
     maiorlucro = lucro_cam1
 elif formula2 > formula1 and formula2 > formula3:
-    melhorcaso = qt_cam2
+    melhortecido = qt_cam2
     maiorlucro = lucro_cam2
 else:
-   melhorcaso = qt_cam3
-   maiorlucro = lucro_cam3  
+    melhortecido = qt_cam3
+    maiorlucro = lucro_cam3  
 
 while tecido_total>=melhortecido:
     tecido_total=tecido_total-melhortecido
